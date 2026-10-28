@@ -4,9 +4,11 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit_MoodCafe-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://siratpreetkaur18.github.io/MoodCafe/)
 [![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)](#)
 
 > **Continuous Assessment (CA) Project for Web Development / HTML Coursework**  
+> **Live Website:** [https://siratpreetkaur18.github.io/MoodCafe/](https://siratpreetkaur18.github.io/MoodCafe/)  
 > **Developed by:** Siratpreet Kaur ([@siratpreetkaur18](https://github.com/siratpreetkaur18)), Anshal, and Swapna.
 
 ---
