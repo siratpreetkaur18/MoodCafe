@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoodCafe - Mood Check</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Take the MoodCafe gentle mood check-in to assess your stress levels and receive personalized relaxation guidance.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html" id="brand"><img src="images/logo-icon.png" alt="MoodCafe logo"><h2>MoodCafe</h2></a>
+        <button id="menu-btn" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Open menu">☰</button>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="survey.html" class="active">Mood Check</a>
+            <a href="result.html">Result</a>
+            <div class="dropdown">
+                <a href="tips.html">Relax Menu ▾</a>
+                <div class="dropdown-menu">
+                    <a href="tips.html#meditation">🧘 Meditation</a>
+                    <a href="tips.html#exercise">🏃 Exercise</a>
+                    <a href="tips.html#music">🎵 Music</a>
+                    <a href="tips.html#food">🍎 Food</a>
+                    <a href="tips.html#breathing">🌬️ Breathing</a>
+                    <a href="tips.html#habits">🌙 Daily Habits</a>
+                </div>
+            </div>
+            <a href="help.html">Need Help?</a>
+        </div>
+    </div>
+
+    <div class="page-heading">
+        <h1>💬 Mood Check-in</h1>
+        <p>Take a seat. Tell us how you are feeling today.</p>
+    </div>
+
+    <div class="container">
+        <div class="box" id="survey-box">
+
+            <div class="question"><p>👤 What should we call you?</p><input type="text" id="username" placeholder="Enter your name"></div>
+
+            <div class="question">
+                <h3>💬 How are you feeling right now?</h3>
+                <select id="mood">
+                    <option value="none">-- Choose your mood --</option>
+                    <option value="Happy">😊 Happy</option>
+                    <option value="Calm">😌 Calm</option>
+                    <option value="Tired">😴 Tired</option>
+                    <option value="Sad">😢 Sad</option>
+                    <option value="Worried">😟 Worried</option>
+                    <option value="Angry">😠 Angry</option>
+                </select>
+            </div>
+
+            <h3>🌤️ A few gentle questions</h3>
+
+            <div class="question">
+                <p>1. How is your energy today?</p>
+                <select id="q1"><option value="0">-- Choose an option --</option><option value="1">Full of energy</option><option value="2">Okay</option><option value="3">Low</option><option value="4">Very low</option></select>
+            </div>
+
+            <div class="question">
+                <p>2. How did you sleep last night?</p>
+                <select id="q2"><option value="0">-- Choose an option --</option><option value="1">Very well</option><option value="2">Okay</option><option value="3">Not well</option><option value="4">Very badly</option></select>
+            </div>
+
+            <div class="question">
+                <p>3. How easy is it to focus on your work or studies?</p>
+                <select id="q3"><option value="0">-- Choose an option --</option><option value="1">Very easy</option><option value="2">Fairly easy</option><option value="3">Difficult</option><option value="4">Very difficult</option></select>
+            </div>
+
+            <div class="question">
+                <p>4. How often do your thoughts feel too loud or too much?</p>
+                <select id="q4"><option value="0">-- Choose an option --</option><option value="1">Never</option><option value="2">Sometimes</option><option value="3">Often</option><option value="4">Always</option></select>
+            </div>
+
+            <div class="question">
+                <p>5. How patient do you feel with the people around you?</p>
+                <select id="q5"><option value="0">-- Choose an option --</option><option value="1">Very patient</option><option value="2">Mostly patient</option><option value="3">Easily irritated</option><option value="4">Very irritated</option></select>
+            </div>
+
+            <div class="question">
+                <h3>💭 What is on your mind the most?</h3>
+                <select id="reason">
+                    <option value="none">-- Choose one --</option>
+                    <option value="Exams / Studies">Exams / Studies</option>
+                    <option value="Family problems">Family problems</option>
+                    <option value="Money worries">Money worries</option>
+                    <option value="Friends / Relationships">Friends / Relationships</option>
+                    <option value="Future / Career">Future / Career</option>
+                    <option value="Nothing in particular">Nothing in particular</option>
+                </select>
+            </div>
+
+            <button onclick="submitSurvey()">Show My Result</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="foot-links"><a href="index.html">Home</a><a href="survey.html">Mood Check</a><a href="result.html">Result</a><a href="tips.html">Relax Menu</a><a href="help.html">Need Help?</a></div>
+        <p><img class="foot-logo" src="images/logo-icon.png" alt=""> MoodCafe | Made by Sirat, Anshal, Swapna | HTML, CSS and JavaScript Project</p>
+    </div>
+
+    <a href="#" id="to-top" title="Back to top">↑</a>
+
+    <script src="js/survey.js"></script>
+</body>
+</html>

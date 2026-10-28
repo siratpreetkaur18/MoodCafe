@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoodCafe - Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="View your personalized MoodCafe stress score and custom relaxation menu with targeted exercises, music, and nutrition tips.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html" id="brand"><img src="images/logo-icon.png" alt="MoodCafe logo"><h2>MoodCafe</h2></a>
+        <button id="menu-btn" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Open menu">☰</button>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="survey.html">Mood Check</a>
+            <a href="result.html" class="active">Result</a>
+            <div class="dropdown">
+                <a href="tips.html">Relax Menu ▾</a>
+                <div class="dropdown-menu">
+                    <a href="tips.html#meditation">🧘 Meditation</a>
+                    <a href="tips.html#exercise">🏃 Exercise</a>
+                    <a href="tips.html#music">🎵 Music</a>
+                    <a href="tips.html#food">🍎 Food</a>
+                    <a href="tips.html#breathing">🌬️ Breathing</a>
+                    <a href="tips.html#habits">🌙 Daily Habits</a>
+                </div>
+            </div>
+            <a href="help.html">Need Help?</a>
+        </div>
+    </div>
+
+    <div class="page-heading">
+        <h1>📊 Your Mood Report</h1>
+        <p id="greeting">Your report will be shown here.</p>
+    </div>
+
+    <div class="container">
+
+        <div class="box" id="no-data" style="text-align: center;">
+            <h3>No check-in found</h3>
+            <p>Please do the mood check-in first so we can show your report.</p>
+            <a href="survey.html" class="btn">Go to Mood Check</a>
+        </div>
+
+        <div id="result-area">
+            <div class="box" id="summary">
+                <p id="mood-message"></p>
+                <p>Your stress level</p>
+                <div id="level-badge"></div>
+                <p id="score-text"></p>
+                <p id="reason-text"></p>
+                <p id="reason-advice"></p>
+            </div>
+
+            <div class="box high-box" id="high-help">
+                <h3>💜 Your stress level is high right now</h3>
+                <p>That is okay, and it does not mean something is wrong with you. Here are a few things you can do today:</p>
+                <ol>
+                    <li>Pause and take 5 slow breaths before doing anything else.</li>
+                    <li>Break your biggest worry into one small task and do only that.</li>
+                    <li>Talk to a friend, family member or teacher you trust.</li>
+                    <li>Go to bed on time tonight and keep your phone away for a while.</li>
+                </ol>
+                <p>If this feeling has stayed for many days, please reach out to someone who can support you.</p>
+                <a href="help.html" class="btn">Get Help &amp; Support</a>
+                <a href="tips.html#breathing" class="btn">Try Breathing Exercise</a>
+            </div>
+
+            <h2 class="section-title">Your Relax Menu</h2>
+            <div class="cards">
+                <div class="card meditation"><div class="icon">🧘</div><h3>Meditation</h3><p id="meditation"></p></div>
+                <div class="card exercise"><div class="icon">🏃</div><h3>Exercise</h3><p id="exercise"></p></div>
+                <div class="card music"><div class="icon">🎵</div><h3>Music</h3><p id="music"></p></div>
+                <div class="card food"><div class="icon">🍎</div><h3>Food</h3><p id="food"></p></div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="survey.html" class="btn">Check In Again</a>
+                <a href="tips.html" class="btn">See Full Relax Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="foot-links"><a href="index.html">Home</a><a href="survey.html">Mood Check</a><a href="result.html">Result</a><a href="tips.html">Relax Menu</a><a href="help.html">Need Help?</a></div>
+        <p><img class="foot-logo" src="images/logo-icon.png" alt=""> MoodCafe | Made by Sirat, Anshal, Swapna | HTML, CSS and JavaScript Project</p>
+    </div>
+
+    <a href="#" id="to-top" title="Back to top">↑</a>
+
+    <script src="js/result.js"></script>
+</body>
+</html>

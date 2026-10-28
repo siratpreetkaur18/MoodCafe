@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoodCafe - Relax Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore MoodCafe's complete relax menu featuring guided meditation, gentle exercises, relaxing music, nutrition tips, and an animated 1-minute breathing circle.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html" id="brand"><img src="images/logo-icon.png" alt="MoodCafe logo"><h2>MoodCafe</h2></a>
+        <button id="menu-btn" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Open menu">☰</button>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="survey.html">Mood Check</a>
+            <a href="result.html">Result</a>
+            <div class="dropdown">
+                <a href="tips.html" class="active">Relax Menu ▾</a>
+                <div class="dropdown-menu">
+                    <a href="tips.html#meditation">🧘 Meditation</a>
+                    <a href="tips.html#exercise">🏃 Exercise</a>
+                    <a href="tips.html#music">🎵 Music</a>
+                    <a href="tips.html#food">🍎 Food</a>
+                    <a href="tips.html#breathing">🌬️ Breathing</a>
+                    <a href="tips.html#habits">🌙 Daily Habits</a>
+                </div>
+            </div>
+            <a href="help.html">Need Help?</a>
+        </div>
+    </div>
+
+    <div class="page-heading">
+        <h1>🌸 Relax Menu</h1>
+        <p>Simple things you can order any day to lift your mood.</p>
+    </div>
+
+    <div class="subnav">
+        <a href="#meditation">🧘 Meditation</a>
+        <a href="#exercise">🏃 Exercise</a>
+        <a href="#music">🎵 Music</a>
+        <a href="#food">🍎 Food</a>
+        <a href="#breathing">🌬️ Breathing</a>
+        <a href="#habits">🌙 Daily Habits</a>
+    </div>
+
+    <div class="container">
+        <div class="cards two">
+            <div class="card meditation" id="meditation">
+                <div class="icon">🧘</div><h3>Meditation</h3>
+                <ul>
+                    <li>Sit straight and close your eyes for 5 minutes.</li>
+                    <li>Count your breaths from 1 to 10 and start again.</li>
+                    <li>Use a free guided meditation app before sleeping.</li>
+                </ul>
+            </div>
+            <div class="card exercise" id="exercise">
+                <div class="icon">🏃</div><h3>Exercise</h3>
+                <ul>
+                    <li>Walk for 20 to 30 minutes every day.</li>
+                    <li>Do simple yoga poses like child pose and cat-cow.</li>
+                    <li>Stretch your neck and shoulders after long study hours.</li>
+                </ul>
+            </div>
+            <div class="card music" id="music">
+                <div class="icon">🎵</div><h3>Music</h3>
+                <ul>
+                    <li>Listen to soft instrumental or lo-fi music while studying.</li>
+                    <li>Play your favourite old songs when you feel low.</li>
+                    <li>Try nature sounds like rain or birds before sleeping.</li>
+                </ul>
+            </div>
+            <div class="card food" id="food">
+                <div class="icon">🍎</div><h3>Food</h3>
+                <ul>
+                    <li>Drink enough water through the day.</li>
+                    <li>Eat fruits, nuts and curd instead of too much junk food.</li>
+                    <li>Have a cup of warm milk or herbal tea at night.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="breathing">🌬️ 1-Minute Breathing Exercise</h2>
+        <div class="box">
+            <div class="breath-area">
+                <p>Breathe in when the circle grows. Breathe out when it shrinks.</p>
+                <div id="breath-circle"></div>
+            </div>
+            <ol>
+                <li>Sit comfortably and relax your shoulders.</li>
+                <li>Breathe in slowly through your nose for 4 seconds.</li>
+                <li>Hold your breath for 4 seconds.</li>
+                <li>Breathe out slowly through your mouth for 6 seconds.</li>
+                <li>Repeat this 6 times.</li>
+            </ol>
+        </div>
+
+        <h2 class="section-title" id="habits">🌙 Daily Habits</h2>
+        <div class="box">
+            <p>Sleep for 7 to 8 hours. Take short breaks while studying. Talk to a friend or family member when you feel worried. Keep your phone away for some time before bed.</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="foot-links"><a href="index.html">Home</a><a href="survey.html">Mood Check</a><a href="result.html">Result</a><a href="tips.html">Relax Menu</a><a href="help.html">Need Help?</a></div>
+        <p><img class="foot-logo" src="images/logo-icon.png" alt=""> MoodCafe | Made by Sirat, Anshal, Swapna | HTML, CSS and JavaScript Project</p>
+    </div>
+
+    <a href="#" id="to-top" title="Back to top">↑</a>
+
+</body>
+</html>

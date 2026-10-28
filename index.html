@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoodCafe - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MoodCafe - A cozy corner where your mood gets a menu. Check in with your mood and discover calming practices, exercise, music, and nutrition tips.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html" id="brand"><img src="images/logo-icon.png" alt="MoodCafe logo"><h2>MoodCafe</h2></a>
+        <button id="menu-btn" onclick="document.getElementById('links').classList.toggle('open')" aria-label="Open menu">☰</button>
+        <div id="links">
+            <a href="index.html" class="active">Home</a>
+            <a href="survey.html">Mood Check</a>
+            <a href="result.html">Result</a>
+            <div class="dropdown">
+                <a href="tips.html">Relax Menu ▾</a>
+                <div class="dropdown-menu">
+                    <a href="tips.html#meditation">🧘 Meditation</a>
+                    <a href="tips.html#exercise">🏃 Exercise</a>
+                    <a href="tips.html#music">🎵 Music</a>
+                    <a href="tips.html#food">🍎 Food</a>
+                    <a href="tips.html#breathing">🌬️ Breathing</a>
+                    <a href="tips.html#habits">🌙 Daily Habits</a>
+                </div>
+            </div>
+            <a href="help.html">Need Help?</a>
+        </div>
+    </div>
+
+    <div id="hero">
+        <div class="bubble b1"></div><div class="bubble b2"></div><div class="bubble b3"></div><div class="bubble b4"></div>
+        <img class="hero-logo" src="images/logo.png" alt="MoodCafe logo">
+        <h1>Hey there! 👋<br>How are you feeling today?</h1>
+        <p>Welcome to MoodCafe. Tell us your mood and we will serve you something to feel better.</p>
+        <a href="survey.html" class="btn">Check In With Me</a>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="cards">
+            <a class="card" href="survey.html"><div class="icon">😊</div><h3>1. Share Your Mood</h3><p>Pick the mood that matches how you feel right now. There is no right or wrong answer.</p></a>
+            <a class="card" href="survey.html"><div class="icon">💬</div><h3>2. Answer a Few Questions</h3><p>A few gentle questions about your energy, sleep and thoughts help us understand you better.</p></a>
+            <a class="card" href="result.html"><div class="icon">🍽️</div><h3>3. Get Your Menu</h3><p>We serve you ideas for meditation, exercise, music and food to lift your mood.</p></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Today's Menu</h2>
+        <div class="cards">
+            <a class="card meditation" href="tips.html#meditation"><div class="icon">🧘</div><h3>Meditation</h3><p>Breathing and quiet time to calm your mind.</p></a>
+            <a class="card exercise" href="tips.html#exercise"><div class="icon">🏃</div><h3>Exercise</h3><p>Walks and yoga to release tension.</p></a>
+            <a class="card music" href="tips.html#music"><div class="icon">🎵</div><h3>Music</h3><p>Songs and sounds that lift your mood.</p></a>
+            <a class="card food" href="tips.html#food"><div class="icon">🍎</div><h3>Food</h3><p>Healthy snacks and drinks that help you feel good.</p></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Why Do Moods Matter?</h2>
+        <div class="box">
+            <p>Our mood changes many times a day. Sometimes we feel happy and sometimes we feel low, and both are normal. But when a heavy mood stays for many days, it can turn into stress and affect our sleep, studies and health.</p>
+            <p>Noticing how we feel is the first step. After that, small habits like deep breathing, a walk, good music and healthy food can make a big difference.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="facts">
+            <div class="fact f1"><h3>2 min</h3><p>to complete the check-in</p></div>
+            <div class="fact f2"><h3>6 moods</h3><p>to choose from</p></div>
+            <div class="fact f3"><h3>4 ways</h3><p>to relax: meditation, exercise, music, food</p></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box quote-box">
+            <h3>💭 Thought for Today</h3>
+            <p id="quote">Take a deep breath. You are doing better than you think.</p>
+            <button onclick="newQuote()">Show Another Thought</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="foot-links"><a href="index.html">Home</a><a href="survey.html">Mood Check</a><a href="result.html">Result</a><a href="tips.html">Relax Menu</a><a href="help.html">Need Help?</a></div>
+        <p><img class="foot-logo" src="images/logo-icon.png" alt=""> MoodCafe | Made by Sirat, Anshal, Swapna | HTML, CSS and JavaScript Project</p>
+    </div>
+
+    <a href="#" id="to-top" title="Back to top">↑</a>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
